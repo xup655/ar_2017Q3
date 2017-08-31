@@ -1,0 +1,23 @@
+{
+  "name": "ar_2017q3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xup655/ar_2017Q3.git"
+  },
+  "author": "xup655",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xup655/ar_2017Q3/issues"
+  },
+  "homepage": "https://github.com/xup655/ar_2017Q3#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
