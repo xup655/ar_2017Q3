@@ -1,6 +1,33 @@
+@charset "UTF-8";
+body {
+  font-family: "微軟正黑體"; }
+
 .index_area .full-banner {
   height: 500px;
   background-position: top center;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-image: url("../../demo/index_bn01.jpg"); }
+
+#footer .primary-footer {
+  background: #ff8533;
+  border-bottom: 10px solid #fff45c;
+  font-size: 12px; }
+  #footer .primary-footer .footer-logo {
+    padding: 50px 20px;
+    background: #fff; }
+  #footer .primary-footer h5 {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff; }
+  #footer .primary-footer .f-list li {
+    border: 0; }
+    #footer .primary-footer .f-list li a {
+      line-height: 28px;
+      color: #fff; }
+      #footer .primary-footer .f-list li a:before {
+        display: none; }
+
+#footer .secondary-footer {
+  display: none; }
