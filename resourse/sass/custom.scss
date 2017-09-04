@@ -2,9 +2,8 @@ body {
   font-family: "微軟正黑體";
 }
 
-.red {
-  color: red;
-}
+.red {color: red;}
+.gray {color: #9a9a9a;}
 
 h1 {
   padding-top: 15px;
@@ -107,6 +106,14 @@ input[type="checkbox"] {
     // .showhide {
     //   display: block !important;
     // }
+  }
+  .logo-brand {
+    img {
+      @media screen and (min-width: 769px) and (max-width: 991px) {
+        z-index: 1;
+        max-width: 150px
+      }
+    }
   }
   .menuzord-menu {
     > li {
@@ -366,7 +373,7 @@ input[type="checkbox"] {
       }
     }
     &:hover,
-    .active {
+    &.active {
       a {
         background: #6fb83f;
         border: 1px solid #6fb83f;
@@ -485,6 +492,37 @@ input[type="checkbox"] {
     .date {
       margin: 0 0 0 25px;
       color: #000;
+    }
+  }
+}
+
+// service
+.service_area {
+  h1 {
+
+  }
+  .feature-box-grid {
+    .odd_even_color {
+      .featured-item.border-box {
+        &,
+        &:hover {
+          background: #f0f5f0;
+          h4 {
+            color: #000;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        .featured-item.border-box {
+          &,
+          &:hover {
+            background: #ffefe5;
+            h4 {
+              color: #000;
+            }
+          }
+        }
+      }
     }
   }
 }

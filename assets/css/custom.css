@@ -5,6 +5,9 @@ body {
 .red {
   color: red; }
 
+.gray {
+  color: #9a9a9a; }
+
 h1 {
   padding-top: 15px;
   border-bottom: 1px solid #c9c9c9;
@@ -103,6 +106,10 @@ input[type="checkbox"] {
     .l-header {
       padding: 0;
       height: 60px; } }
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    .l-header .logo-brand img {
+      z-index: 1;
+      max-width: 150px; } }
   .l-header .menuzord-menu > li > a {
     padding: 0 15px;
     font-size: 18px;
@@ -304,8 +311,7 @@ input[type="checkbox"] {
       padding-right: 0;
       width: 100%; } }
 
-.case_area .portfolio-filter li:hover a,
-.case_area .portfolio-filter li .active a {
+.case_area .portfolio-filter li:hover a, .case_area .portfolio-filter li.active a {
   background: #6fb83f;
   border: 1px solid #6fb83f;
   color: #fff; }
@@ -399,6 +405,16 @@ input[type="checkbox"] {
 .case_content_area .widget-latest-post .date {
   margin: 0 0 0 25px;
   color: #000; }
+
+.service_area .feature-box-grid .odd_even_color .featured-item.border-box, .service_area .feature-box-grid .odd_even_color .featured-item.border-box:hover {
+  background: #f0f5f0; }
+  .service_area .feature-box-grid .odd_even_color .featured-item.border-box h4, .service_area .feature-box-grid .odd_even_color .featured-item.border-box:hover h4 {
+    color: #000; }
+
+.service_area .feature-box-grid .odd_even_color:nth-child(odd) .featured-item.border-box, .service_area .feature-box-grid .odd_even_color:nth-child(odd) .featured-item.border-box:hover {
+  background: #ffefe5; }
+  .service_area .feature-box-grid .odd_even_color:nth-child(odd) .featured-item.border-box h4, .service_area .feature-box-grid .odd_even_color:nth-child(odd) .featured-item.border-box:hover h4 {
+    color: #000; }
 
 #footer .primary-footer {
   background: #ff8533;
