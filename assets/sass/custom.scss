@@ -11,6 +11,16 @@ body {
     background-repeat: no-repeat;
     background-image: url("../../demo/index_bn01.jpg");
   }
+  .block_about_area {
+    outlien:#123654;
+    ul.about_block {
+      list-style: none;
+      display: flex;
+      li {
+        width: 50%;
+      }
+    }
+  }
 }
 
 // footer
