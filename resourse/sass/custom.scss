@@ -2,9 +2,8 @@ body {
   font-family: "微軟正黑體";
 }
 
-.red {
-  color: red;
-}
+.red {color: red;}
+.gray {color: #9a9a9a;}
 
 h1 {
   padding-top: 15px;
@@ -108,6 +107,14 @@ input[type="checkbox"] {
     //   display: block !important;
     // }
   }
+  .logo-brand {
+    img {
+      @media screen and (min-width: 769px) and (max-width: 991px) {
+        z-index: 1;
+        max-width: 150px
+      }
+    }
+  }
   .menuzord-menu {
     > li {
       > a {
@@ -123,7 +130,8 @@ input[type="checkbox"] {
           font-size: 14px;
           font-weight: normal;
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 768px) {
+          margin-top: 0;
           line-height: 1.5;
         }
       }
@@ -347,16 +355,29 @@ input[type="checkbox"] {
     width: 400px;
   }
   .portfolio-filter li {
+    @media screen and (max-width:480px) {
+      margin: 1% 5%;
+      width: 30%;
+    }
     a {
       padding: 10px 15px;
       border: 1px solid #d3d3d3;
       font-size: 14px;
       color: #000;
-      &:hover,
-      .active {
+      @media screen and (max-width:480px) {
+        display: block;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+    &:hover,
+    &.active {
+      a {
         background: #6fb83f;
-      border: 1px solid #6fb83f;
-      color: #fff;
+        border: 1px solid #6fb83f;
+        color: #fff;
       }
     }
   }
@@ -475,6 +496,43 @@ input[type="checkbox"] {
   }
 }
 
+// service
+.service_area {
+  h1 {
+
+  }
+  .feature-box-grid {
+    .odd_even_color {
+      height: 290px;
+      overflow: hidden;
+      background: #f0f5f0;
+      &:nth-child(odd) {
+        background: #ffefe5;
+      }
+      .featured-item.border-box {
+        &,
+        &:hover {
+          background: none;
+          h4 {
+            color: #000;
+          }
+        }
+      }
+      // &:nth-child(odd) {
+      //   .featured-item.border-box {
+      //     &,
+      //     &:hover {
+      //       background: #ffefe5;
+      //       h4 {
+      //         color: #000;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
 // form
 .form_area {
   h1 {}
@@ -511,8 +569,20 @@ input[type="checkbox"] {
   }
   .secondary-footer {display: none}
 }
+
+// page top
 .lift-off {
   right: 5px;
   bottom: 330px;
-  background: #ff8433
+  // background: #ff8433;
+  background: rgba(230, 112, 51, .8);
+  @media screen and (min-height: 840px) {
+    right: 5px;
+    bottom: 330px;
+  }
+  @media screen and (max-width: 480px) {
+    right: 25px;
+    bottom: 15px;
+    background: rgba(230, 112, 51, .8);
+  }
 }
