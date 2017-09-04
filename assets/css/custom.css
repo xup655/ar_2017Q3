@@ -75,6 +75,27 @@ input[type="checkbox"] {
   .blog-post * {
     max-width: 100%; }
 
+.right_btn_area {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  z-index: 2;
+  width: 50px; }
+  @media screen and (max-width: 991px) {
+    .right_btn_area {
+      display: none; } }
+  @media screen and (max-height: 375px) {
+    .right_btn_area {
+      display: none; } }
+  .right_btn_area .btn {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    line-height: 1.2;
+    white-space: normal; }
+    .right_btn_area .btn [class^="icon-"] {
+      width: 30px;
+      height: 30px; }
+
 .l-header {
   padding: 10px 0;
   border-top: 3px solid #ffea00; }
@@ -109,23 +130,6 @@ input[type="checkbox"] {
 
 .index_area .full-banner {
   background-image: url("../../demo/index_bn01.jpg"); }
-  .index_area .full-banner .right_btn_area {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -60%);
-    width: 50px; }
-    @media screen and (max-height: 375px) {
-      .index_area .full-banner .right_btn_area {
-        display: none; } }
-    .index_area .full-banner .right_btn_area .btn {
-      margin-bottom: 15px;
-      padding: 15px 10px;
-      line-height: 1.2;
-      white-space: normal; }
-      .index_area .full-banner .right_btn_area .btn [class^="icon-"] {
-        width: 30px;
-        height: 30px; }
   .index_area .full-banner .circle_outline {
     margin-left: -20%;
     width: 335px;
@@ -348,12 +352,39 @@ input[type="checkbox"] {
   font-size: 18px;
   font-weight: bold; }
 
-.case_content_area h1 {
+.case_content_area h3 {
   margin-left: auto;
   margin-right: auto;
-  width: 240px; }
-  .case_content_area h1 img {
+  width: 240px;
+  border-bottom: 1px solid #c9c9c9;
+  font-size: 36px; }
+  .case_content_area h3 img {
     margin-right: 0px; }
+
+.case_content_area h1 {
+  border: 0;
+  font-size: 24px; }
+
+.case_content_area .right_area h2 {
+  padding: 5px;
+  width: 100%;
+  color: #ff6600; }
+  .case_content_area .right_area h2:before {
+    content: "";
+    display: inline-block;
+    margin-right: 3 px;
+    width: 4px;
+    border: 2px solid #ff6600;
+    vertical-align: middle; }
+
+.case_content_area .widget-latest-post li {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px dashed #d6ebc9; }
+
+.case_content_area .widget-latest-post .date {
+  margin: 0 0 0 25px;
+  color: #000; }
 
 #footer .primary-footer {
   background: #ff8533;
