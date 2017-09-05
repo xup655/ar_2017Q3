@@ -2,8 +2,14 @@ body {
   font-family: "微軟正黑體";
 }
 
+<<<<<<< HEAD
 .red {color: red;}
 .gray {color: #9a9a9a;}
+=======
+.red {
+  color: red;
+}
+>>>>>>> b29b4547d261c99e835a8b144c62c6c7b4ad83bc
 
 h1 {
   padding-top: 15px;
@@ -107,6 +113,7 @@ input[type="checkbox"] {
     //   display: block !important;
     // }
   }
+<<<<<<< HEAD
   .logo-brand {
     img {
       @media screen and (min-width: 769px) and (max-width: 991px) {
@@ -115,6 +122,8 @@ input[type="checkbox"] {
       }
     }
   }
+=======
+>>>>>>> b29b4547d261c99e835a8b144c62c6c7b4ad83bc
   .menuzord-menu {
     > li {
       > a {
@@ -130,8 +139,12 @@ input[type="checkbox"] {
           font-size: 14px;
           font-weight: normal;
         }
+<<<<<<< HEAD
         @media screen and (max-width: 768px) {
           margin-top: 0;
+=======
+        @media screen and (max-width: 767px) {
+>>>>>>> b29b4547d261c99e835a8b144c62c6c7b4ad83bc
           line-height: 1.5;
         }
       }
@@ -355,15 +368,19 @@ input[type="checkbox"] {
     width: 400px;
   }
   .portfolio-filter li {
+<<<<<<< HEAD
     @media screen and (max-width:480px) {
       margin: 1% 5%;
       width: 30%;
     }
+=======
+>>>>>>> b29b4547d261c99e835a8b144c62c6c7b4ad83bc
     a {
       padding: 10px 15px;
       border: 1px solid #d3d3d3;
       font-size: 14px;
       color: #000;
+<<<<<<< HEAD
       @media screen and (max-width:480px) {
         display: block;
         margin: 0;
@@ -378,6 +395,13 @@ input[type="checkbox"] {
         background: #6fb83f;
         border: 1px solid #6fb83f;
         color: #fff;
+=======
+      &:hover,
+      .active {
+        background: #6fb83f;
+      border: 1px solid #6fb83f;
+      color: #fff;
+>>>>>>> b29b4547d261c99e835a8b144c62c6c7b4ad83bc
       }
     }
   }
@@ -496,6 +520,7 @@ input[type="checkbox"] {
   }
 }
 
+<<<<<<< HEAD
 // service
 .service_area {
   h1 {
@@ -527,6 +552,8 @@ input[type="checkbox"] {
   }
 }
 
+=======
+>>>>>>> b29b4547d261c99e835a8b144c62c6c7b4ad83bc
 // form
 .form_area {
   h1 {}
@@ -566,6 +593,7 @@ input[type="checkbox"] {
 .lift-off {
   right: 5px;
   bottom: 330px;
+<<<<<<< HEAD
   // background: #ff8433;
   background: rgba(230, 112, 51, .8);
   @media screen and (min-height: 840px) {
@@ -577,4 +605,7 @@ input[type="checkbox"] {
     bottom: 15px;
     background: rgba(230, 112, 51, .8);
   }
+=======
+  background: #ff8433
+>>>>>>> b29b4547d261c99e835a8b144c62c6c7b4ad83bc
 }
