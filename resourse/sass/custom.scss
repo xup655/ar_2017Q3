@@ -4,6 +4,15 @@ body {
 
 .red {color: red;}
 .gray {color: #9a9a9a;}
+.text_overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-wrap: break-word;
+  word-break: break-all;
+}
 
 h1 {
   padding-top: 15px;
@@ -150,10 +159,10 @@ input[type="checkbox"] {
   h1 {
     border: 0;
   }
-  h2 {
-    border-bottom: 1px solid #c9c9c9;
-    letter-spacing: -1px;
-  }
+  // h2 {
+  //   border-bottom: 1px solid #c9c9c9;
+  //   letter-spacing: -1px;
+  // }
   .full-banner {
     // background-position: top center;
     // background-size: 100% auto;
@@ -241,7 +250,7 @@ input[type="checkbox"] {
     padding-top: 50px;
     h2 {
       padding-bottom: 20px;
-      letter-spacing: -1px;
+    //   letter-spacing: -1px;
     }
     ul.about_block {
       list-style: none;
@@ -266,6 +275,30 @@ input[type="checkbox"] {
   }
   .block_case_area {
     background: url("../images/block_case_bg.png") repeat;
+    h2 {
+      margin-bottom: 0;
+    }
+    .seemore_area {
+      display: block;
+      margin: 30px 0 10px;
+      .btn {
+        margin-right: 0;
+      }
+      i {
+        margin-right: -24px;
+        vertical-align: middle;
+        font-size: 24px;
+        font-weight: bold;
+        color: #e71f19;
+      }
+    }
+    .portfolio-description {
+      height: 80px;
+      -webkit-line-clamp: 3;
+      p {
+        line-height: 25px;
+      }
+    }
   }
   .block_news_area {
     .icon-five {
@@ -289,22 +322,12 @@ input[type="checkbox"] {
       }
     }
     .arrow_img_area {
-      @media screen and (max-width: 768px) {
-        padding-left: 15px;
-        padding-right: 15px;
-        .arrow_txt {
-          padding-left: 15px;
-          padding-right: 15px;
-        }
-        .seemore_area {
-          padding-left: 0;
-          padding-right: 0;
-        }
-        .postdate_area {
-          padding-left: 0;
-          padding-right: 0;
-        }
-      }
+      padding-left: 15px;
+      padding-right: 14px;
+      // @media screen and (max-width: 768px) {
+      //   padding-left: 15px;
+      //   padding-right: 15px;
+      // }
       .arrow_img {
         img {
           border: 0;
@@ -323,13 +346,20 @@ input[type="checkbox"] {
         }
       }
     }
+    .arrow_txt {
+      h3 {
+        -webkit-line-clamp: 2;
+      }
+    }
     .post-date {
       font-size: 13px;
       color: #88c425;
     }
     .news_txt {
+      height: 48px;
       line-height: 1.6;
       font-size: 14px;
+      -webkit-line-clamp: 2;
     }
   }
   .block_form_area {
@@ -549,6 +579,13 @@ input[type="checkbox"] {
 
 // footer
 #footer {
+  .col-lg-1X {
+    margin-right: -2%;
+  }
+  .col-lg-3X {
+    margin-left: -2%;
+    min-width: 18.666667%;
+  }
   .primary-footer {
     background: #ff8533;
     border-bottom: 10px solid #fff45c;
@@ -556,6 +593,9 @@ input[type="checkbox"] {
     .footer-logo {
       padding: 50px 20px;
       background: #fff;
+      img {
+        max-width: 100%;
+      }
     }
     h5 {
       margin-bottom: 0;
@@ -616,6 +656,11 @@ input[type="checkbox"] {
 }
 
 // title h2
+.dash_index {
+  border-bottom: 1px solid #c9c9c9;
+  letter-spacing: -1px;
+}
+
 .dash_title_style {
   margin-left: auto;
   margin-right: auto;
@@ -654,6 +699,7 @@ $border_width: 3px;
     right: -13px;
   }
 }
+
 .number_title {
   // &:before {
   //   content: attr(data-number);

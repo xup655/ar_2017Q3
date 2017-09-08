@@ -8,6 +8,15 @@ body {
 .gray {
   color: #9a9a9a; }
 
+.text_overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-wrap: break-word;
+  word-break: break-all; }
+
 h1 {
   padding-top: 15px;
   border-bottom: 1px solid #c9c9c9;
@@ -132,10 +141,6 @@ input[type="checkbox"] {
 .index_area h1 {
   border: 0; }
 
-.index_area h2 {
-  border-bottom: 1px solid #c9c9c9;
-  letter-spacing: -1px; }
-
 .index_area .full-banner {
   background-image: url("../../demo/index_bn01.jpg"); }
   .index_area .full-banner .circle_outline {
@@ -206,8 +211,7 @@ input[type="checkbox"] {
 .index_area .block_about_area {
   padding-top: 50px; }
   .index_area .block_about_area h2 {
-    padding-bottom: 20px;
-    letter-spacing: -1px; }
+    padding-bottom: 20px; }
   .index_area .block_about_area ul.about_block {
     list-style: none;
     display: grid;
@@ -223,6 +227,24 @@ input[type="checkbox"] {
 
 .index_area .block_case_area {
   background: url("../images/block_case_bg.png") repeat; }
+  .index_area .block_case_area h2 {
+    margin-bottom: 0; }
+  .index_area .block_case_area .seemore_area {
+    display: block;
+    margin: 30px 0 10px; }
+    .index_area .block_case_area .seemore_area .btn {
+      margin-right: 0; }
+    .index_area .block_case_area .seemore_area i {
+      margin-right: -24px;
+      vertical-align: middle;
+      font-size: 24px;
+      font-weight: bold;
+      color: #e71f19; }
+  .index_area .block_case_area .portfolio-description {
+    height: 80px;
+    -webkit-line-clamp: 3; }
+    .index_area .block_case_area .portfolio-description p {
+      line-height: 25px; }
 
 .index_area .block_news_area .icon-five {
   border-top: 1px solid #d5d5d5; }
@@ -242,42 +264,35 @@ input[type="checkbox"] {
     .index_area .block_news_area .news_block {
       padding: 10px; } }
 
-@media screen and (max-width: 768px) {
-  .index_area .block_news_area .arrow_img_area {
-    padding-left: 15px;
-    padding-right: 15px; }
-    .index_area .block_news_area .arrow_img_area .arrow_txt {
-      padding-left: 15px;
-      padding-right: 15px; }
-    .index_area .block_news_area .arrow_img_area .seemore_area {
-      padding-left: 0;
-      padding-right: 0; }
-    .index_area .block_news_area .arrow_img_area .postdate_area {
-      padding-left: 0;
-      padding-right: 0; } }
+.index_area .block_news_area .arrow_img_area {
+  padding-left: 15px;
+  padding-right: 14px; }
+  .index_area .block_news_area .arrow_img_area .arrow_img img {
+    border: 0; }
+  .index_area .block_news_area .arrow_img_area .arrow_img:before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #ffffff transparent transparent; }
 
-.index_area .block_news_area .arrow_img_area .arrow_img img {
-  border: 0; }
-
-.index_area .block_news_area .arrow_img_area .arrow_img:before {
-  content: "";
-  position: absolute;
-  top: 40%;
-  right: 0;
-  transform: translate(0, -50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 20px 20px 20px 0;
-  border-color: transparent #ffffff transparent transparent; }
+.index_area .block_news_area .arrow_txt h3 {
+  -webkit-line-clamp: 2; }
 
 .index_area .block_news_area .post-date {
   font-size: 13px;
   color: #88c425; }
 
 .index_area .block_news_area .news_txt {
+  height: 48px;
   line-height: 1.6;
-  font-size: 14px; }
+  font-size: 14px;
+  -webkit-line-clamp: 2; }
 
 .index_area .block_form_area {
   background: #f6f9fc; }
@@ -418,6 +433,13 @@ input[type="checkbox"] {
     .service_area .feature-box-grid .odd_even_color .featured-item.border-box h4, .service_area .feature-box-grid .odd_even_color .featured-item.border-box:hover h4 {
       color: #000; }
 
+#footer .col-lg-1X {
+  margin-right: -2%; }
+
+#footer .col-lg-3X {
+  margin-left: -2%;
+  min-width: 18.666667%; }
+
 #footer .primary-footer {
   background: #ff8533;
   border-bottom: 10px solid #fff45c;
@@ -425,6 +447,8 @@ input[type="checkbox"] {
   #footer .primary-footer .footer-logo {
     padding: 50px 20px;
     background: #fff; }
+    #footer .primary-footer .footer-logo img {
+      max-width: 100%; }
   #footer .primary-footer h5 {
     margin-bottom: 0;
     font-size: 12px;
@@ -467,6 +491,10 @@ input[type="checkbox"] {
   .icon_line_double_tit h3 {
     margin: 0;
     font-size: 36px; }
+
+.dash_index {
+  border-bottom: 1px solid #c9c9c9;
+  letter-spacing: -1px; }
 
 .dash_title_style {
   margin-left: auto;
