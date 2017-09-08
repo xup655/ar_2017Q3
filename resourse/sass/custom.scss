@@ -450,8 +450,12 @@ input[type="checkbox"] {
     width: 400px;
   }
   .portfolio-filter li {
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:768px) {
       margin: 1% 5%;
+      width: 20%;
+    }
+    @media screen and (max-width:480px) {
+      // margin: 1% 5%;
       width: 30%;
     }
     a {
@@ -459,12 +463,19 @@ input[type="checkbox"] {
       border: 1px solid #d3d3d3;
       font-size: 14px;
       color: #000;
-      @media screen and (max-width:480px) {
+      @media screen and (max-width:768px) {
         display: block;
         margin: 0;
         padding-left: 0;
         padding-right: 0;
         width: 100%;
+      }
+      @media screen and (max-width:480px) {
+        // display: block;
+        // margin: 0;
+        // padding-left: 0;
+        // padding-right: 0;
+        // width: 100%;
       }
     }
     &:hover,
@@ -580,8 +591,12 @@ input[type="checkbox"] {
 
 // service
 .service_area {
-  h1 {
-
+  .featured-item.border-box {
+    padding: 0;
+    a {
+      display: block;
+      padding: 50px;
+    }
   }
   .feature-box-grid {
     .odd_even_color {
@@ -601,6 +616,16 @@ input[type="checkbox"] {
         }
       }
     }
+  }
+}
+
+// service content
+.service_content_area {
+  h2.dash_title_style {
+    width: 320px;
+  }
+  h1.icon_line_double_tit {
+    width: 240px;
   }
 }
 
