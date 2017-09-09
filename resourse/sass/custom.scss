@@ -49,6 +49,14 @@ h3 {
 .btn-medium {padding: 5px 15px;font-size: 20px;}
 .btn-small {padding: 2px 15px;font-size: 14px;}
 
+.green_check {
+  font-size: 18px;
+  color: #6fb83f;
+  img {
+    vertical-align: sub;
+  }
+}
+
 .icon-editor,
 .icon-msg {
   display: inline-block;
@@ -74,10 +82,54 @@ input[type="checkbox"] {
   vertical-align: sub;
 }
 
+table {
+  margin: 10px auto 50px;
+  width: 100%;
+  th,
+  td {
+    padding: 15px;
+    width: 68%;
+    border-bottom: 1px solid #d8ebcf;
+  }
+  th {
+    width: 28%;
+    background: #eef7ea;
+  }
+}
+
 .blog-post {
   overflow: hidden;
   * {
     max-width: 100%;
+  }
+}
+
+iframe {
+  &,
+  * {
+    max-width: 100%;
+  }
+}
+
+.path_area {
+  line-height: 1.2;
+  font-size: 12px;
+  li {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff6600;
+    font-weight: bold;
+  }
+  a {
+    margin-right: 7px;
+    color: #666;
+    &:hover {
+      color: #ff6600;
+    }
+  }
+  img {
+    margin-right: 5px;
+    vertical-align: bottom;
   }
 }
 
@@ -428,6 +480,119 @@ input[type="checkbox"] {
   }
 }
 
+// difference
+.difference_area {
+  h1 {
+    width: 750px;
+    max-width: 100%;
+  }
+  table {
+    margin: 10px auto 50px;
+    width: 80%;
+    th,
+    td {
+      padding: 15px 0;
+      width: 38%;
+      text-align: center;
+      border: 1px solid #d8ebcf;
+    }
+    th {
+      width: 18%;
+      // background: #eef7ea;
+    }
+    @media screen and (max-width: 768px) {
+      th:first-child {
+        display: none;
+      }
+      thead th {
+        // display: table-cell;
+      }
+      th,
+      td {
+        width: 48%;
+      }
+      td {
+        position: relative;
+        padding-top: 30px;
+        &:before {
+          display: block;
+          content: attr(data-tit);
+          position: absolute;
+          top: 0;
+          width: 100%;
+          background: #eee;
+          font-size: 12px;
+          font-weight: bold;
+        }
+
+      }
+    }
+  }
+}
+
+// company
+.company_area {
+  table {
+    @media screen and (max-width: 768px) {
+      th,
+      td {
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+      }
+      .yeartit {
+        display: block;
+        background: #eee;
+      }
+    }
+    &.corp_profile {
+      line-height: 2;
+      text-align: left;
+      th {
+        width: 14%;
+      }
+      td {
+        width: 85%;
+      }
+      b {
+        display: inline-block;
+        margin-top: 15px;
+        &:first-child {
+          margin: 0;
+        }
+      }
+      img {
+        margin: 10px 0;
+        width: auto;
+      }
+    }
+    &.sub {
+      margin: 0;
+      td {
+        padding-right: 0;
+        padding-left: 0;
+        width: auto;
+        border: 0;
+        vertical-align: top;
+      }
+      &.sub1 td {
+        min-width: 120px;
+      }
+      &.sub2 td {
+        min-width: 120px;
+      }
+      &.sub3 td {
+        &:first-child {
+          min-width: 150px;
+        }
+        &:nth-last-child(2) {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
 // news
 .news_area {
   h1 {
@@ -566,14 +731,14 @@ input[type="checkbox"] {
       padding: 5px;
       width: 100%;
       color: #ff6600;
-      &:before {
-        content: "";
-        display: inline-block;
-        margin-right: 3 px;
-        width: 4px;
-        border: 2px solid #ff6600;
-        vertical-align: middle;
-      }
+      // &:before {
+      //   content: "";
+      //   display: inline-block;
+      //   margin-right: 3 px;
+      //   width: 4px;
+      //   border: 2px solid #ff6600;
+      //   vertical-align: middle;
+      // }
     }
   }
   .widget-latest-post {
@@ -623,9 +788,31 @@ input[type="checkbox"] {
 .service_content_area {
   h2.dash_title_style {
     width: 320px;
+    max-width: 100%;
   }
+  // h2.orange_title_sqa.dash_title_style {
+  //   width: 100%;
+  // }
   h1.icon_line_double_tit {
     width: 240px;
+  }
+  .service_box {
+    border: 1px dashed #90CC99;
+    .service_tit_box {
+      padding: 10px 0;
+      border: 0;
+      border-bottom: 1px dashed #90CC99;
+      font-size: 20px;
+    }
+  }
+  .service_tit_box {
+    padding: 10px 0;
+    border: 1px dashed #90CC99;
+    font-size: 20px;
+  }
+  .gray b {
+    margin-left: 20px;
+    color: #000;
   }
 }
 
@@ -726,6 +913,20 @@ input[type="checkbox"] {
   border: 1px dashed #d4d4d4;
   font-size: 18px;
   font-weight: bold;
+}
+
+.orange_title_sqa {
+  padding: 5px;
+  width: 100%;
+  color: #ff6600;
+  &:before {
+    content: "";
+    display: inline-block;
+    // margin-right: 3 px;
+    width: 4px;
+    border: 2px solid #ff6600;
+    vertical-align: middle;
+  }
 }
 
 $border_width: 3px;
