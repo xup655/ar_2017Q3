@@ -10,6 +10,8 @@ body {
 
 .red {color: red;}
 .gray {color: #9a9a9a;}
+.dark {color: #000;}
+
 .text_overflow {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -47,6 +49,10 @@ h2 {
 
 h3 {
   font-size: 16px;
+}
+
+.line-height-2 {
+  line-height: 2;
 }
 
 .green_btn {background: #6fb83f;color: #fff;}
@@ -406,8 +412,8 @@ iframe {
     .arrow_img_area {
       padding-left: 15px;
       padding-right: 14px;
-      @media screen and (max-width: 1199px) {
-        margin: 0 -15px 0 15px;
+      @media screen and (max-width: 991px) {
+        margin: 0 15px 0 15px;
         padding: 0;
       }
       .arrow_img {
@@ -429,13 +435,13 @@ iframe {
       }
     }
     .seemore_area{
-      @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @media screen and (min-width: 992px) {
         padding: 0 15px;
         width: 52%;
       }
     }
     .postdate_area {
-      @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @media screen and (min-width: 992px) {
         padding: 0;
         width: 48%;
       }
