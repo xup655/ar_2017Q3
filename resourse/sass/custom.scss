@@ -218,6 +218,13 @@ iframe {
           color: #ff6600;
         }
       }
+      > ul {
+        > li {
+          > a {
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }
@@ -442,6 +449,7 @@ iframe {
     }
     .postdate_area {
       @media screen and (min-width: 992px) {
+        float: right;
         padding: 0;
         width: 48%;
       }
@@ -869,7 +877,7 @@ iframe {
   .primary-footer {
     background: #ff8533;
     border-bottom: 10px solid #fff45c;
-    font-size: 12px;
+    font-size: 15px;
     .footer-logo {
       padding: 50px 20px;
       background: #fff;
@@ -879,7 +887,7 @@ iframe {
     }
     h5 {
       margin-bottom: 0;
-      font-size: 12px;
+      font-size: 15px;
       font-weight: bold;
       color: #fff;
     }
