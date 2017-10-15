@@ -155,12 +155,6 @@ iframe {
   right: 0;
   z-index: 2;
   width: 50px;
-  @media screen and (max-width: 991px) {
-    display: none;
-  }
-  @media screen and (max-height: 375px) {
-    display: none;
-  }
   .btn {
     margin-bottom: 15px;
     padding: 15px 10px;
@@ -169,6 +163,33 @@ iframe {
     [class^="icon-"] {
       width: 30px;
       height: 30px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    .btn {
+      float: left;
+      margin: 0;
+      width: 50%;
+      height: 50px;
+      font-size: 18px;
+      [class^="icon-"] {
+        position: relative;
+        // top: 11px;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+      &.green_btn {
+        background: #8ECE5C;
+        [class^="icon-"] {
+          top: -5px;
+        }
+      }
+      &.orange_btn {
+        background: #E7844E;
+      }
     }
   }
 }
@@ -194,6 +215,11 @@ iframe {
   }
   .menuzord-menu {
     > li {
+      .indicator {
+        @media screen and (min-width: 769px) {
+          display: none;
+        }
+      }
       > a {
         padding: 0 15px;
         // line-height: 150px;
@@ -323,6 +349,9 @@ iframe {
   }
   .block_about_area {
     padding-top: 50px;
+    @media screen and (max-width: 1199px) {
+      padding-top: 0;
+    }
     h2 {
       padding-bottom: 20px;
     //   letter-spacing: -1px;
@@ -349,6 +378,7 @@ iframe {
     }
   }
   .block_case_area {
+    padding: 25px 0;
     background: url("../images/block_case_bg.png") repeat;
     h2 {
       margin-bottom: 0;
@@ -367,11 +397,19 @@ iframe {
         color: #e71f19;
       }
     }
+    .portfolio {
+      margin-bottom: 0;
+    }
     .portfolio.gutter .portfolio-item {
       margin-bottom: 15px;
       .thumb {
-        padding: 10px;
         background: #EEF7EA;
+        .txt_box {
+          padding: 10px;
+        }
+        .action-btn {
+          top: 50%;
+        }
       }
       // margin-right: 10px;
       // background: #EEF7EA;
@@ -396,6 +434,7 @@ iframe {
     }
   }
   .block_news_area {
+    padding: 25px 0;
     .icon-five {
       border-top: 1px solid #d5d5d5;
       &:before {
@@ -471,6 +510,7 @@ iframe {
     }
   }
   .block_form_area {
+    padding: 25px 0 50px;
     background: #f6f9fc;
     .form_list {
       list-style: none;
@@ -645,7 +685,10 @@ iframe {
     }
     @media screen and (max-width:480px) {
       // margin: 1% 5%;
-      width: 30%;
+      // width: 30%;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
     a {
       padding: 10px 15px;
@@ -682,11 +725,17 @@ iframe {
       background: #eef7ea;
     }
   }
-  .portfolio-description p {
-    padding: 10px;
-    line-height: 1.8;
-    font-size: 13px;
-    color: #202020;
+  .portfolio-description {
+    p {
+      padding: 10px;
+      height: 80px;
+      line-height: 1.8;
+      font-size: 13px;
+      color: #202020;
+    }
+    .text_overflow {
+      -webkit-line-clamp: 3;
+    }
   }
 }
 
@@ -790,10 +839,10 @@ iframe {
 .service_area {
   .featured-item.border-box {
     padding: 0;
-    a {
-      display: block;
+    // a {
+    //   display: block;
       padding: 50px;
-    }
+    // }
   }
   .feature-box-grid {
     .odd_even_color {
@@ -909,19 +958,19 @@ iframe {
 
 // page top
 .lift-off {
-  right: 5px;
-  bottom: 330px;
-  // background: #ff8433;
-  background: rgba(230, 112, 51, .8);
-  @media screen and (min-height: 840px) {
-    right: 5px;
-    bottom: 330px;
-  }
-  @media screen and (max-width: 480px) {
-    right: 25px;
-    bottom: 15px;
-    background: rgba(230, 112, 51, .8);
-  }
+  display: none;
+  // right: 5px;
+  // bottom: 330px;
+  // background: rgba(230, 112, 51, .8);
+  // @media screen and (min-height: 840px) {
+  //   right: 5px;
+  //   bottom: 330px;
+  // }
+  // @media screen and (max-width: 480px) {
+  //   right: 25px;
+  //   bottom: 15px;
+  //   background: rgba(230, 112, 51, .8);
+  // }
 }
 
 // pagination
